@@ -1,0 +1,358 @@
+body {
+	/*    background: #f1f1f1 !important;*/
+	
+}
+
+.container-white {
+	background: #fff;
+}
+
+/* Custom carousel */
+.carousel-inner {
+	min-height: 500px;
+	max-height: 500px
+}
+
+.carousel-indicators .active {
+	background-color: #919191;
+}
+
+.carousel .carousel-indicators li {
+	max-width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.carousel-caption {
+	font-weight: bold;
+	top: 250px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+		1px 1px #ccc, -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc;
+}
+
+.carousel-inner>.carousel-item>.view, .carousel-inner>.carousel-item>.view>img
+	{
+	width: 100% !important;
+}
+
+/* YOUR CUSTOM STYLES */
+.logo {
+	padding: 30px 0;
+}
+
+.h1-title {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.carousel-preview {
+	top: 250px;
+	font-size: 50px;
+}
+
+.carousel-next {
+	top: 250px;
+	float: right;
+	font-size: 50px;
+}
+
+.truncase-detail {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.slide-new {
+	/* margin-bottom: 40px; */
+	
+}
+
+.footer-phong-tro {
+	background: #303133 !important;
+}
+
+.header-footer-phong-tro {
+	margin-top: 50px;
+	display: block;
+	background: url(../image/footer.png);
+	height: 85px;
+	width: 100%;
+	margin-bottom: -20px;
+}
+
+#map {
+	margin-top: 20px;
+	height: 400px;
+	width: 100%;
+    background-color: #ccc;
+}
+
+#map2 {
+	margin-top: 20px;
+	height: 400px;
+	width: 100%;
+    background-color: #ccc;
+}
+
+.owl-carousel .owl-item {
+	float: left;
+	width: 260px !important;
+	margin-left: 15px;
+}
+
+.owl-carousel .owl-item  .item {
+	background: #ff3f4d !important;
+}
+
+.owl-carousel .owl-item:first-child {
+	margin-left: 10px;
+}
+
+.owl-wrapper {
+	height: 500px;
+}
+
+#search-container {
+	position: relative;
+}
+
+#search-bg {
+	/* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 99;
+	/* Pull the background 70px higher to the same place as #bg's */
+	background-position: center -70px;
+	-webkit-filter: blur(10px);
+	filter: url('/media/blur.svg#blur');
+	filter: blur(10px);
+}
+
+#search {
+	/* Put this on top of the blurred layer */
+	position: relative;
+	z-index: 100;
+	padding: 20px;
+	background: rgb(34, 34, 34); /* for IE */
+	background: rgba(34, 34, 34, 0.75);
+}
+
+.blur-bgimage {
+	/* margin-top: -460px; */
+	z-index: 200;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#menuBeauti {
+	/* position: absolute */
+	
+}
+
+.custom-nav-home {
+	margin-top: -74px;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	font-weight: bold;
+	font-size: 13.5px;
+}
+
+.custom-nav-view-thread {
+	margin-top: 33px;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	font-weight: bold;
+	font-size: 13.5px;
+}
+
+.navbar.navbar-dark .breadcrumb a:hover, .navbar.navbar-dark .navbar-nav .nav-item a:hover
+	{
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-right-menu-main {
+	margin-left: 15px;
+	font-weight: bold;
+	color: #fff !important;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	border-radius: 30px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.btn-right-menu-main:hover {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* breakcum */
+.breadcrumb {
+	/*centering*/
+	/* display: inline-block; */
+	/* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35); */
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	/* 	counter-reset: flag; 
+	 */
+	background-color: #fff !important;
+	margin-top: 30px;
+	margin-bottom: -15px;
+	border-bottom: 3px solid #9EEB62;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 10px 0 25px;
+	/* background: #666;*/
+	background: linear-gradient(#666, #333);
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+	padding-left: 16px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+
+.breadcrumb a:first-child:before {
+	left: 14px;
+}
+
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover {
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb a */
+	width: 36px;
+	height: 36px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	/* background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	stylish arrow design using box shadow
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1); */
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+	content: none;
+}
+/*we will use the :before element to show numbers*/
+.breadcrumb a:before {
+	/* content: counter(flag);
+	counter-increment: flag; */
+	/*some styles now*/
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	/* background: #444;
+	background: linear-gradient(#444, #222); */
+	font-weight: bold;
+}
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.5s;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.flat a:before {
+	background: white;
+	box-shadow: 0 0 0 1px #ccc;
+	padding-left: 5px;
+}
+
+.flat a:hover, .flat a.active, .flat a:hover:after, .flat a.active:after
+	{
+	background: #9EEB62;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* rate */
+.block.courseitem .star-rating {
+	width: 150px;
+	font-family: roboto;
+	font-size: 13px;
+	color: #009B9B;
+}
+
+.star-rating span.fill {
+	margin-right: 5px;
+}
+
+.star-rating span.fill {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/stars.png) 0 0;
+}
+
+.star-rating span {
+	display: inline-block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/stars.png) 0 100%;
+}
+
+.star-rating span.half {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/stars.png) 0 50%;
+}
+
+footer.page-footer {
+	margin-top: 0;
+	padding-top: 0;
+	background-color: #3E4551;
+	color: #fff;
+}

@@ -1,0 +1,110 @@
+body {
+	background: #eef3f9;
+}
+
+.navbar {
+	background: #fff;
+}
+
+.main-board {
+	margin: 0px;
+	margin-top: 55px;
+}
+
+.form-admin-right {
+	width: 100%;
+}
+
+.dash-board {
+	background: #505A66 !important;
+	height: 60px;
+}
+
+.table-custom {
+	padding: 15px;
+}
+
+.col-mot {
+	display: inline-block;
+	width: 50px;
+}
+
+.col-hai {
+	display: inline-block;
+	width: 150px;
+}
+
+.col-ba {
+	display: inline-block;
+	width: 250px;
+}
+
+.button-show-left {
+	background: #fff !important;
+}
+
+.button-dash-board {
+	background: #505A66 !important;
+}
+
+.side-menu-left {
+	background: #454D58;
+	height: 100vh;
+}
+
+.button-side-menu-left {
+	background: #454D58;
+	width: 100%;
+	margin: 0;
+	box-shadow: none;
+	text-align: left;
+	padding: 20px 30px;
+}
+
+.icon-in-button {
+	margin-right: 15px;
+}
+
+.btn-action {
+	background: #fff;
+	border-radius: 50%;
+	height: 40px !important;
+	width: 40px !important;
+	padding: 10px !important;
+}
+
+.icon-btn-action {
+	
+}
+
+.main-content {
+	margin: 15px 15px 15px 15px;
+	background: #fff;
+	width: 1000px;
+	height: calc(100vh - 100px);
+}
+.main-content-form {
+	margin: 15px 5px 15px 5px;
+	background: #fff;  
+}
+
+.title-in-admin {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.button-add-new-in-admin {
+	float: right;
+	right: 0px;
+}
+
+.button-login-admin {
+	background: #1a237e !important;
+	height: 42px;
+	padding-top: 5px;
+}
+
+.pagination-center {
+	display: table;
+	margin: 0 auto;
+}

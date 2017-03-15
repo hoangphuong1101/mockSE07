@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts 
+Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+
+
+		<!-- BAT DAU FORM CHO TRANG ADMIN -->
+		<!-- Dang nhap vao trang admin -->
+		<form-bean name="loginForm" type="form.admin.LoginForm" />
+
+		<!-- Quản lý tài khoản -->
+		<form-bean name="accountListForm" type="form.admin.account.AccountListForm" />
+		<form-bean name="accountForm" type="form.admin.account.AccountForm" />
+		<form-bean name="deleteForm" type="form.admin.account.DeleteForm" />
+		<!-- Quản lý thể loại bài viết -->
+		
+		<form-bean name="categoryListForm" type="form.admin.category.CategoryListForm"/>
+		<form-bean name="categoryForm" type="form.admin.category.CategoryForm" />
+		<form-bean name="deleteForm" type="form.admin.category.DeleteForm" />
+		
+		<!-- KET THUC FORM CHO TRANG ADMIN -->
+
+
+	</form-beans>
+	<action-mappings>
+
+		<!-- BAT DAU ACTION CHO TRANG ADMIN -->
+		<!-- KET THUC QUAN LY TAI KHOAN -->
+
+		<!-- Xoa account -->
+		<!-- <action input="/admin/login.jsp" name="deleteForm"
+			path="/admin/delete-account-action" scope="request"
+			type="action.admin.account.DeleteAccountAction">
+			<forward name="deletedAccount" path="/admin/account-action.do"
+				redirect="true" />
+		</action> -->
+
+		
+
+		<!-- Sua account -->
+		<!-- <action input="/admin/login.jsp" name="accountForm"
+			path="/admin/edit-account-action" scope="request"
+			type="action.admin.account.EditAccountAction" validate="true">
+			<forward name="editAccount" path="/admin/editaccount.jsp" />
+			<forward name="editedAccount" path="/admin/account-action.do"
+				redirect="true" />
+		</action> -->
+		
+		<!-- KET THUC QUAN LY TAI KHOAN -->
+		<!-- Quản lý thể loại bài đăng -->
+			
+			<!-- Dang nhap -->
+		<action input="/admin/login.jsp" name="loginForm" path="/admin/login-action"
+			scope="request" type="action.admin.LoginAction">
+			<forward name="success" path="/admin/category-action.do"
+				redirect="true" />
+			<forward name="failed" path="/admin/login.jsp" />
+		</action>
+		
+		<!-- Liet ke danh sach category -->
+		<action input="/admin/login.jsp" name="categoryListForm" path="/admin/category-action"
+			scope="request" type="action.admin.category.CategoryListAction">
+			<forward name="listCategorys" path="/admin/category.jsp" />
+		</action>
+		
+		<!-- Them moi category -->
+		<action input="/admin/login.jsp" name="categoryForm"
+			path="/admin/add-category-action" scope="request"
+			type="action.admin.category.AddCategoryAction" validate="true">
+			<forward name="addCategory" path="/admin/addcategory.jsp" />
+			<forward name="addedCategory" path="/admin/category-action.do"
+				redirect="true" />
+		</action>
+		
+		<!-- Sửa tên thể loại -->
+		<action input="/admin/login.jsp" name="categoryForm"
+			path="/admin/edit-category-action" scope="request"
+			type="action.admin.category.EditCategoryAction" validate="true">
+			<forward name="editCategory" path="/admin/editcategory.jsp" />
+			<forward name="editedCategory" path="/admin/category-action.do"
+				redirect="true" />
+		</action>
+		<!-- xóa thể loại -->
+		<action input="/admin/login.jsp" name="deleteForm"
+			path="/admin/delete-category-action" scope="request"
+			type="action.admin.category.DeleteCategoryAction">
+			<forward name="deletedCategory" path="/admin/category-action.do"
+				redirect="true" />
+		</action>
+		<!-- Kết thúc Quản lý thể loại bài đăng -->
+		<!-- KET THUC ACTION CHO TRANG ADMIN -->
+
+
+	</action-mappings>
+	<message-resources parameter="static.ApplicationResources" />
+
+</struts-config>
